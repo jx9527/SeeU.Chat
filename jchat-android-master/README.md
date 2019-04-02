@@ -1,4 +1,4 @@
-# SeeU Android
+# SeeU 
 
 ### 简介
 
