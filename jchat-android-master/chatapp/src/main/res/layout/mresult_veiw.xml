@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jiguang.chat.view.MResultView android:id="@+id/mresult_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFE8EDF3">
+
+        <RelativeLayout
+            android:id="@+id/mresult_lplp"
+            android:layout_width="match_parent"
+            android:layout_height="48.5dp"
+            android:background="@color/red">
+
+            <ImageButton
+                android:id="@+id/seeu_return1"
+                android:layout_width="@dimen/title_bar_height"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:background="@drawable/jmui_back_btn_bg"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-11dp"
+                android:layout_toRightOf="@id/seeu_return1"
+                android:text="选这句，去遇见"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mresult_opop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mresult_lplp">
+
+            <ImageButton
+                android:id="@+id/mresult_list_1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/list_1" />
+
+            <ImageButton
+                android:id="@+id/mresult_refresh_1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/refresh_1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:id="@+id/mresult_match_bar_btm"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/mresult_rect1_1"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/rectangle" />
+
+                <ImageView
+                    android:id="@+id/mresult_rect1_2"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/rectangle" />
+
+                <ImageView
+                    android:id="@+id/mresult_rect1_3"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/rectangle" />
+
+                <ImageView
+                    android:id="@+id/mresult_rect1_4"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/rectangle" />
+
+                <ImageView
+                    android:id="@+id/mresult_rect1_5"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/rectangle" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/mresult_aa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/mresult_a1"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:background="@drawable/man_up" />
+
+                    <ImageView
+                        android:id="@+id/mresult_a2"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:visibility="invisible"
+                        android:background="@drawable/man" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/mresult_bb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/mresult_b1"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:visibility="invisible"
+                        android:background="@drawable/man_up" />
+
+                    <ImageView
+                        android:id="@+id/mresult_b2"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:background="@drawable/man" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/mresult_cc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/mresult_c1"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:visibility="invisible"
+                        android:background="@drawable/man_up" />
+
+                    <ImageView
+                        android:id="@+id/mresult_c2"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:background="@drawable/man" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/mresult_dd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:id="@+id/mresult_d1"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:background="@drawable/man_up" />
+
+                    <ImageView
+                        android:id="@+id/mresult_d2"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:background="@drawable/man" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/mresult_ee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/mresult_e1"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:visibility="invisible"
+                        android:background="@drawable/man_up" />
+
+                    <ImageView
+                        android:id="@+id/mresult_e2"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:background="@drawable/man" />
+                </FrameLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/mresult_match_bar_btm"
+            android:layout_below="@id/mresult_opop"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="1dp">
+            <com.gigamole.library.ShadowLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:sl_shadow_radius="3.8dp"
+                app:sl_shadow_distance="3.8dp">
+                <jiguang.chat.view.ScrollControlViewPager
+                    android:id="@+id/mresult_match_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true">
+                </jiguang.chat.view.ScrollControlViewPager>
+
+            </com.gigamole.library.ShadowLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</jiguang.chat.view.MResultView>

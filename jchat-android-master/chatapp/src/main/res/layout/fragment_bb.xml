@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jiguang.chat.view.BBView android:id="@+id/bb_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:scrollbarThumbVertical="@color/red_btn_normal"
+        android:scrollbarSize="1.5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            app:layout_widthPercent="94%"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_marginTopPercent="3%"
+                app:layout_paddingPercent="2%">
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:id="@+id/left_layout_2"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_marginEndPercent="5%"
+                    android:layout_gravity="start"
+                    android:background="@drawable/we2">
+                    <TextView
+                        android:id="@+id/userId_2b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        app:layout_marginPercent="3%"
+                        android:text="[作者]"
+                        android:textColor="#ffffff"/>
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="#ffffff"/>
+                    <TextView
+                        android:id="@+id/left_msg_2b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        app:layout_marginPercent="3%"
+                        android:textColor="#ffffff"/>
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    app:layout_marginStartPercent="5%"
+                    android:layout_gravity="start"
+                    app:layout_marginTopPercent="2%"
+                    android:background="@drawable/we">
+                    <TextView
+                        android:id="@+id/pipeiname_2b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        app:layout_marginPercent="3%"
+                        android:text="[作者]"
+                        android:textColor="#ffffff"/>
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="#ffffff"/>
+                    <TextView
+                        android:id="@+id/right_msg_2b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        app:layout_marginPercent="3%"
+                        android:textColor="#ffffff"/>
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <Button
+                android:id="@+id/btn_bb"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_heightPercent="10%"
+                app:layout_marginLeftPercent="14%"
+                app:layout_marginBottomPercent="8%"
+                app:layout_marginRightPercent="14%"
+                app:layout_marginTopPercent="20%"
+                android:elevation="4.5dp"
+                android:background="@drawable/blue_btn_selector"
+                android:text="选这句，去遇见"
+                android:textColor="@drawable/blue_text_selector"
+                android:textSize="18sp"
+                android:gravity="center"/>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    </ScrollView>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</jiguang.chat.view.BBView>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<jiguang.chat.view.PiPeiView android:id="@+id/PiPei_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FFE8EDF3"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<com.zhy.android.percent.support.PercentRelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/pipei_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/red">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="SeeU"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/opop"
+        android:layout_below="@id/pipei_title"
+        android:layout_width="0dp"
+        app:layout_widthPercent="92%"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="3.5%"
+        app:layout_heightPercent="85%"
+        android:layout_height="0dp">
+
+ <com.gigamole.library.ShadowLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     app:sl_shadow_distance="3.8dp"
+     app:sl_shadow_color="@color/gray"
+     app:sl_shadow_radius="3.5dp">
+
+     <com.zhy.android.percent.support.PercentRelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="#fff">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/hhh"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="80%"
+            app:layout_heightPercent="50%"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/boy"
+            android:contentDescription="匹配的头像"
+            android:scaleType="centerCrop" />
+
+
+         <TextView
+             android:id="@+id/lol"
+             android:layout_width="0dp"
+             android:layout_height="0dp"
+             app:layout_widthPercent="35%"
+             app:layout_heightPercent="7%"
+             android:layout_below="@id/hhh"
+             android:layout_centerHorizontal="true"
+             android:text="遇   见"
+             android:gravity="center"
+             android:textColor="@color/black"
+             android:textStyle="bold"
+             android:textSize="18dp"/>
+
+         <TextView
+             android:id="@+id/lklk"
+             android:layout_width="0dp"
+             android:layout_height="0dp"
+             app:layout_heightPercent="6%"
+             app:layout_widthPercent="78%"
+             android:layout_below="@id/lol"
+             android:gravity="center"
+             android:layout_centerHorizontal="true"
+             app:layout_marginTopPercent="10%"
+             android:text="  遇见你，遇到更好的自己"
+             android:textColor="@color/black"
+             android:textSize="16dp"
+             android:textStyle="bold" />
+
+         <Button
+             android:id="@+id/match_btn"
+             style="?android:attr/borderlessButtonStyle"
+             android:layout_width="0dp"
+             android:layout_height="0dp"
+             app:layout_widthPercent="85%"
+             app:layout_heightPercent="10%"
+             android:layout_below="@id/lklk"
+             android:layout_centerHorizontal="true"
+             app:layout_marginTopPercent="14%"
+             android:background="@drawable/blue_btn_selector"
+             android:elevation="6dp"
+             android:text="start"
+             android:textSize="18dp"
+             android:textColor="@drawable/blue_text_selector" />
+
+     </com.zhy.android.percent.support.PercentRelativeLayout>
+ </com.gigamole.library.ShadowLayout>
+
+    </RelativeLayout>
+
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+</jiguang.chat.view.PiPeiView>

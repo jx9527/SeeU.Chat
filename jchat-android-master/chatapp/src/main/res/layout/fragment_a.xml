@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jiguang.chat.view.AView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/aview"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+
+<com.zhy.android.percent.support.PercentLinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:scrollbarSize="1.5dp"
+        android:scrollbarThumbVertical="@color/red_btn_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.zhy.android.percent.support.PercentLinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        app:layout_widthPercent="94%"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+
+        android:gravity="center_horizontal">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginTopPercent="3%"
+            app:layout_paddingPercent="2.5%">
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/left_layout_1"
+                android:orientation="vertical"
+                app:layout_marginEndPercent="5%"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+
+                android:background="@drawable/we2">
+               <TextView
+                   android:id="@+id/left_msg_1a"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="start"
+                   app:layout_marginPercent="3%"
+                   android:textColor="#ffffff"/>
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+  <com.zhy.android.percent.support.PercentLinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:gravity="center"
+      app:layout_marginTopPercent="8%"
+      android:layout_height="0dp"
+      app:layout_heightPercent="10%">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_widthPercent="50%"
+                    app:layout_heightPercent="70%"
+                    android:gravity="center"
+                    android:text="@string/resource"
+                    android:textSize="16sp"
+                    android:textColor="@color/province_line_border"
+                    />
+      <ImageView
+          android:id="@+id/a_heart"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:background="@drawable/like_choose"/>
+
+
+  </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <Button
+            android:id="@+id/btn_a"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%"
+            app:layout_marginLeftPercent="14%"
+            app:layout_marginBottomPercent="10%"
+            app:layout_marginRightPercent="14%"
+            app:layout_marginTopPercent="30%"
+            android:elevation="4.5dp"
+            android:background="@drawable/blue_btn_selector"
+            android:text="选这句，去遇见"
+            android:textColor="@drawable/blue_text_selector"
+            android:textSize="18sp"
+            android:gravity="center"/>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </ScrollView>
+
+</com.zhy.android.percent.support.PercentLinearLayout>
+
+
+</jiguang.chat.view.AView>
